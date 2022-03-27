@@ -24,7 +24,9 @@ app.use('/users', usersRouter);
 app.use('/login', authRoutes);
 
 // Routes RESTRICTED access
-app.use('/company', verifyToken, SuperAdminPermision, companyRoutes);
-app.use('/employee', verifyToken, SuperAdminPermision, employeeRoutes);
+app.use(verifyToken);
+app.use(SuperAdminPermision);
+app.use('/company', companyRoutes);
+app.use('/employee', employeeRoutes);
 
 export default app;

@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import User from '../models/users.models';
 import IUser from '../interfaces/User.interface';
-import Roles from '../enums/roles.enums';
+
 const userCtrl = {
 	getAllUsers: async (req: Request, res: Response) => {
 		try {

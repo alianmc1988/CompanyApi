@@ -1,6 +1,6 @@
 import Employees from '../models/employees.models';
 import { Request, Response } from 'express';
-import { IEmployees } from '../interfaces/employees.interfaces';
+import { IEmployees } from '../interfaces/Employees.interfaces';
 
 export const EmployeesCtrl = {
 	findAllEmployees: async (req: Request, res: Response) => {

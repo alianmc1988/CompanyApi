@@ -1,0 +1,25 @@
+USERS
+1- Users Controller 
+    * implement updateEmployee() function
+
+EMPLOYEES
+2- Create a "jobRole" field in the Employee Schema {ref: from JobRole Schema}
+    (New schema for JobRole)
+
+3- Create Employees requests in Thunder Client
+
+4- Test all routes and restrictions until now
+
+
+DEPARTMENTS
+department_Schema{
+    name,
+    companyID: ref{Company},
+    phoneNumbers:[],
+    email:[],
+    employeesID_InDepartment: [ref:{Employee}]
+}
+
+1- Ceate Departments Schema (Relationships with Employees & Company)
+2- Ceate Departments Controller
+3- Ceate Departments Routes

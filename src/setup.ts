@@ -2,9 +2,9 @@ import Roles from './enums/roles.enums';
 import Users from './models/users.models';
 
 const SUPERADMIN = new Users({
-	username: 'superadmin',
-	email: 'superadmin@miapi.com',
-	password: 'admin2022',
+	username: process.env.SUPERADMIN_USERNAME || 'superadmin',
+	email: process.env.SUPERADMIN_EMAIL || 'superadmin@miapi.com',
+	password: process.env.SUPERADMIN_PASSWORD || 'admin2022',
 	role: Roles.SuperAdmin,
 });
 
